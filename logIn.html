@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 10px 10px;
+            margin: 2px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        input[type=password] {
+            width: 100%;
+            padding: 10px 10px;
+            margin: 2px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        .center {
+            margin: auto;
+            width: 30%;
+            padding: 50px;
+            font-size: x-large
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            color: blue;
+            background-color:lightgray;
+            font-size: x-large;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            
+        }
+        button:hover {
+            background-color: blue;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <div class="center">
+        <form>
+            <label for="username">Login Id:</label><br>
+            <input type="text" id="loginid" name="loginid" placeholder="Enter Email/Phone Number"><br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter Password">
+        </form>
+        <br>
+        <button onclick="myFucntion()">Login</button>
+        <script>
+            function myFucntion(){
+                document.location.href = "logOut.html";
+            }
+        </script>
+    </div>
+        
+</body>
+</html>
